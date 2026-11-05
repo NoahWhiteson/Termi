@@ -6,7 +6,7 @@
     "build": "npm run build --workspace=termi-site"
   },
   "engines": {
-    "node": "24.x"
+    "node": ">=24.0.0"
   },
   "workspaces": [
     "website"

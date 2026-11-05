@@ -84,7 +84,7 @@ npm ci
 npm run dev
 ```
 
-Import **NoahWhiteson/Termi** into Vercel and keep **Root Directory** set to the repository root (`.`). The root npm workspace lockfile and `vercel.json` install the website dependencies, runs its Vite build, and publishes `website/dist/`. No environment variables or Mac build tools are required on Vercel. The DMG is hosted exclusively on GitHub Releases; the website links directly to it.
+Import **NoahWhiteson/Termi** into Vercel. Both Root Directory settings are supported: `.` uses the root `vercel.json` and publishes `website/dist/`; `website` uses `website/vercel.json` and publishes `dist/` relative to that directory. Both use the shared root npm lockfile. The output path is configured explicitly in each directory to avoid Vercel resolving it from the wrong root. No environment variables or Mac build tools are required on Vercel. The DMG is hosted exclusively on GitHub Releases; the website links directly to it.
 
 ## Package and publish a release
 
