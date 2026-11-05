@@ -2,8 +2,13 @@
   "name": "termi",
   "private": true,
   "scripts": {
-    "dev": "npm --prefix website run dev",
-    "build": "npm --prefix website run build"
+    "dev": "npm run dev --workspace=termi-site",
+    "build": "npm run build --workspace=termi-site"
   },
-  "engines": { "node": "24.x" }
+  "engines": {
+    "node": "24.x"
+  },
+  "workspaces": [
+    "website"
+  ]
 }

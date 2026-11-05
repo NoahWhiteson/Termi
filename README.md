@@ -80,11 +80,11 @@ Brand icons are bundled from Simple Icons (CC0) and Lobe Icons (MIT), with notic
 The minimal Vite website lives in `website/`.
 
 ```sh
-npm --prefix website ci
-npm --prefix website run dev
+npm ci
+npm run dev
 ```
 
-Import **NoahWhiteson/Termi** into Vercel and keep **Root Directory** set to the repository root (`.`). The root `vercel.json` installs the website dependencies, runs its Vite build, and publishes `website/dist/`. No environment variables or Mac build tools are required on Vercel. The DMG is hosted exclusively on GitHub Releases; the website links directly to it.
+Import **NoahWhiteson/Termi** into Vercel and keep **Root Directory** set to the repository root (`.`). The root npm workspace lockfile and `vercel.json` install the website dependencies, runs its Vite build, and publishes `website/dist/`. No environment variables or Mac build tools are required on Vercel. The DMG is hosted exclusively on GitHub Releases; the website links directly to it.
 
 ## Package and publish a release
 
@@ -93,7 +93,7 @@ On an Apple silicon Mac:
 ```sh
 ./scripts/build.sh
 ./scripts/package-download.sh
-npm --prefix website run build
+npm run build
 ```
 
 The packaging script produces `build/Termi-mac-arm64.dmg` and its SHA-256 checksum. The disk image contains Termi.app and an Applications shortcut. It also refreshes `website/public/release.json` with the version, file size, and checksum. Build artifacts stay out of Git and Vercel.
