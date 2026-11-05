@@ -1,0 +1,8 @@
+{
+  "version": "1.0.0",
+  "architecture": "arm64",
+  "minimumMacOS": "14.0",
+  "sizeBytes": 2030470,
+  "sha256": "830d68783180ce22b94ab16fe0c5b8659becb4e385ab87ac3fcb81050d5ca0da",
+  "downloadURL": "https://github.com/NoahWhiteson/Termi/releases/latest/download/Termi-mac-arm64.dmg"
+}

@@ -1,0 +1,13 @@
+.build/
+.swiftpm/
+build/
+.DS_Store
+*.xcuserstate
+node_modules/
+dist/
+.openai/
+.vercel/
+.env
+.env.*
+*.dmg
+website/public/downloads/

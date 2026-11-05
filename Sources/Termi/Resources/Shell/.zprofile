@@ -1,0 +1,4 @@
+export ZDOTDIR="$TERMI_USER_ZDOTDIR"
+[[ -f "$TERMI_USER_ZDOTDIR/.zprofile" ]] && source "$TERMI_USER_ZDOTDIR/.zprofile"
+export TERMI_USER_ZDOTDIR="${ZDOTDIR:-$HOME}"
+export ZDOTDIR="$TERMI_INTEGRATION_DIR"
